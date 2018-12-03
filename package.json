@@ -1,0 +1,25 @@
+{
+  "name": "wtmbh",
+  "version": "1.0.0",
+  "description": "woman tech makers exercise week 2 ",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc ava --verbose"
+  },
+  "author": "antia cedron",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.1",
+    "circular-json": "^0.5.9",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.13",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "nyc": "^13.1.0",
+    "supertest": "^3.3.0"
+  }
+}
