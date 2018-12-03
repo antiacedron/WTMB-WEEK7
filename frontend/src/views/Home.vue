@@ -6,13 +6,13 @@ export default {
 
 <template lang="pug">
   .home
-    img(alt="Vue logo" src="../assets/logo.png")
+    img(alt="Library logo" src="../assets/logo-virtual.png")
     h1 Welcome to your virtual library 
-    h2 hello! I am SPA! 
+    h2 FIND THE RIGHT BOOK FOR YOU   
 </template>
 
 <style>
 h2 {
-  color:black;
+  color:rgb(43, 15, 201);
 }
 </style> 
