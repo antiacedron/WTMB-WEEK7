@@ -1,7 +1,0 @@
-extends layout
-
-block content
-    h1 The number of readers is #{people.length}
-    each person in people
-      //p #{person.name} 
-      pre #{JSON.stringify(person,null, 4)} 
