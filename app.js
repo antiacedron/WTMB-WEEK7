@@ -59,16 +59,16 @@ app.get('/',(req, res, next) => {
 
 //BOOK ENDPOINTS 
 
-// app.get('/book/all-list', async (req, res) => {
-//   const books = await Bookservice.findAll()
-//   res.render('data', { data: books }) 
-// }) 
+app.get('/book/all-list', async (req, res) => {
+  const books = await Bookservice.findAll()
+  res.render('data', { data: books }) 
+}) 
 
 app.get('/book/all', async (req, res, next) => {
   const books = await Bookservice.findAll()
-  //res.render('book', { books: books }) 
-  //res.send(books) 
-  res.render('data', { data: books })
+  //res.render('book', { book: books }) 
+  res.send(books) 
+  //res.render('data', { data: books })
 }) 
 
 // app.get('/book/:id', async (req, res) => {
@@ -77,7 +77,7 @@ app.get('/book/all', async (req, res, next) => {
 // }) 
 
 app.get('/book/:id', async (req, res) => {
-  const book = await Bookservice.find(req.params.id)
+  const book = await Bookservice.findByID(req.params.id)
   res.render('data', { data: book })
 }) 
 
