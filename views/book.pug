@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    h1 The number of books is #{books.length}
+    each book in books
+      //p #{book.title} 
+      pre #{JSON.stringify(book,null, 4)} 
